@@ -11,6 +11,7 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
   
 ### Parte 2
   2.1. Determinar el fan-in y fan-out de cada uno de los dispositivos; el fan-in consiste en el número de entradas mientras que el fan-out se determinó con midiendo la relación entre las corrientes de entrada y salida del siguiente circuito con cada uno de los dispositivos
+  ![Simulacion oscilador en anillo con 3 entradas en CMOS]()
   2.2. Determinar la disipación de potencia.
   2.3. se implementó un circuito de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
 
