@@ -16,7 +16,9 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
 
 ### Parte 3
 En esta última parte se planteó estudiar el oscilador en anillo basado en la compuerta NOT. Para ello se realizó el montaje de dos osciladores en anillo con el negador CMOS, uno con tres entradas y el otro con cinco entradas como se observa a continuación.
+Simulacion oscilador en anillo CMOS con 3 entradas
 ![Simulacion oscilador en anillo con 3 entradas en CMOS](Simulaciones-Parte3/OsciladorCMOS-con3.png)
+Simulacion oscilador en anillo CMOS con 5 entradas
 ![Simulacion oscilador en anillo con 5 entradas en CMOS](Simulaciones-Parte3/OsciladorCMOS-con5.png)
 
  En base a esto, se realizó la lectura de de su frecuencia de oscilación y de la forma de su onda, para luego hacer una comparación entre amboos osciladores según lo observado.
