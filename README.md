@@ -38,7 +38,15 @@ El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando
 Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
 
 
-2. 
+2. Los circuitos equivalentes del 74LS04 (TTL) y el CD4069 (CMOS) representan cómo están diseñadas internamente las compuertas NOT en cada dispositivo.
+El circuito equivalente del TTL es el siguiente
+![Circuito equivalente TTL](Datasheets/Circuito equivalebte TTL 74LS04.png)
+
+El circuito equivalente del CMOS es el siguiente
+![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png)
+Datasheets/Circuito equivalebte TTL 74LS04.png
+
+3. Con la señal cuadrada con una frecuencia de 1KHZ se obtuvieron los siguientes resultados, en la simulación y en la práctica que se pueden contrastar con los teóricos
    
 ### Parte 2
 ![Simulacion fan-outCMOS](Simulaciones-Parte2/SimFanOutCMOS.png)
