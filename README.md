@@ -49,7 +49,7 @@ Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrad
 
 Los circuitos equivalentes del 74LS04 (TTL) y el CD4069 (CMOS) representan cómo están diseñadas internamente las compuertas NOT en cada dispositivo.
 El circuito equivalente del TTL es el siguiente:
-![Circuito equivalente TTL](Parte1/Datasheets/Circuito equivalente-TTL 74LS04.png)
+![Circuito equivalente TTL]([Parte1/Datasheets/Circuito equivalente-TTL 74LS04.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/ecb55ed399cde78d55f891e655c1c9d768b6fda7/Parte1/Datasheets/Circuito%20equivalente-TTL%2074LS04.png))
 
 El circuito equivalente del CMOS es el siguiente:
 ![Circuito equivalente CMOS](Parte1/Datasheets/Circuito equivalenteCMOS-CD4049.png)
