@@ -3,11 +3,14 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
 
 ## Procedimeinto
 ### Parte 1
-  1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
+  #### 1.
+     Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
   
-  2. Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
+  #### 2. 
+  Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
   
-  3. Se diseñó un circuito de prueba para cada dispositivo en el que se aplicó una señal cuadrada de 1 kHz con una amplitud adecuada. Utilizando un osciloscopio, generador de señales y una fuente DC se midieron los niveles de V<sub>OUT</sub> en función de V<sub>IN</sub> para obtener la función de transferencia y determinar   V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>.
+  #### 3. 
+  Se diseñó un circuito de prueba para cada dispositivo en el que se aplicó una señal cuadrada de 1 kHz con una amplitud adecuada. Utilizando un osciloscopio, generador de señales y una fuente DC se midieron los niveles de V<sub>OUT</sub> en función de V<sub>IN</sub> para obtener la función de transferencia y determinar   V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>.
   
 ### Parte 2
   1. Se determinó el fan-in y fan-out de cada uno de los dispositivos; el fan-in consiste en el número de entradas mientras que el fan-out se determinó con midiendo la relación entre las corrientes de entrada y salida con cada uno de los dispositivos.
