@@ -1,6 +1,11 @@
 # ElectronicaDigital1-laboratorio1
 Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnologías TTL y CMOS
 
+## Introducción
+El propósito de este laboratorio fue estudiar y comparar las características de dos tecnologías de circuitos integrados: TTL (Transistor-Transistor Logic) y CMOS (Complementary Metal-Oxide-Semiconductor), a través de dispositivos específicos (74LS04 y CD4069). Se analizaron sus especificaciones eléctricas, se diseñaron circuitos de prueba y se evaluaron parámetros clave como niveles lógicos, tiempos de propagación, disipación de potencia, fan-in, fan-out y sensibilidad a condiciones experimentales.
+
+Además, se implementaron osciladores en anillo para explorar la viabilidad de cada tecnología en aplicaciones prácticas y contrastar su comportamiento en términos de frecuencia de oscilación y forma de onda. Este estudio permite comprender las ventajas y limitaciones de ambas tecnologías, guiando la selección adecuada según los requerimientos de diseño.
+
 ## Procedimeinto
 ### Parte 1
   1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
@@ -12,7 +17,7 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
 ### Parte 2
   1. Se determinó el fan-in y fan-out de cada uno de los dispositivos; el fan-in consiste en el número de entradas mientras que el fan-out se determinó con midiendo la relación entre las corrientes de entrada y salida con cada uno de los dispositivos.
   2. Se calculó la disipación de potencia.
-  3. ISe realizó la implementación de un circuito de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
+  3. Se realizó la implementación de un circuito de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
 
 ### Parte 3
 En esta última parte se planteó estudiar el oscilador en anillo basado en la compuerta NOT. Para ello se realizó el montaje de dos osciladores en anillo con el negador CMOS, por facilidad se escogió hacerlos con 3 y con 5 entradas.
@@ -73,12 +78,93 @@ En cuanto a la salida,el V<sub>OH</sub> es relativamente cercano al valor teóri
  En los resultados se observa que el CMOS es más sensible a las resistencias que el TTL, debido a la alta impedancia de entrada y baja capacidad de corriente en la salida. Aunque el TTL estuvo más próximo a los valores teóricos, ambos negadores fueron afectados por las condiciones experimentales y los altos valores en las resistencias.
  
 ### Parte 2
+#### 1. Fan-in y Fan-out
 
+El fan-in define la cantidad de entradas lógicas que puede manejar una puerta. En este caso, tanto en TTL 74LS04 como en CMOS CD4069, cada puerta lógica tiene 1 entrada por puerta inversora, por lo que el fan-in para ambos es 1.
+
+El fan-out define cuántas puertas lógicas de la misma tecnología pueden ser controladas (alimentadas) por la salida de una sola puerta lógica. Para ello,se aplica una fórmula que relaciona la corriente máxima que una compuerta puede suministrar sin que su salida se distorsione con la corriente requerida por una unidad de carga.
+
+
+  ##### TTL 74LS04
+En primer lugar, para los cálculos teóricos se utilizaron los datos proporcionados en el datasheet
+del fabricante:
+  ###### Estado lógico alto.
+La corriente máxima de salida (IOH) es de 0,4 mA, mientras que la corriente requerida de entrada por una carga (IIH) es de 20 μA. Usando la expresión: Fan-out.alto = IOH/IIH = 20
+
+Por lo tanto, el fan-out en estado lógico alto es 20.
+
+  ###### Estado lógico bajo.
+En este caso, se consideran IOL y IIL, con valores de 8 mA y 0,4 mA respectivamente. Usando la expresión Fan-out.bajo = IOL/IIL = 20
+El fan-out en estado lógico bajo también es 20.
+
+En conclusión, el inversor 74LS04 tiene un fan-out teórico de 20 en ambos estados.
+
+###### Simulación.
+En esta etapa se realizó una simulación para verificar este valor, conectando diferentes n ´umeros de unidades de carga a la salida del inversor y midiendo la corriente requerida en cada configuración:
+
+Con dicha simulación se midierom los valores en estado lógico alto y bajo y al final se recopila el menor valor
+
+
+  ##### CMOS CD4069
+  Al igual que con el TTL, para los cálculos teóricos se utilizaron los datos proporcionados en el datasheet
+del fabricante:
+  ###### Estado lógico alto.
+La corriente máxima de salida (IOH) es de -0,52 mA pero se toma el valor absoluto, mientras que la corriente requerida de entrada por una carga (IIH) es de 0.01 μA. Usando la expresión: Fan-out.alto = IOH/IIH = 52 que se puede tomar como 50
+
+Por lo tanto, el fan-out en estado lógico alto es 50.
+
+  ###### Estado lógico bajo.
+En este caso, los valores de los CMOS para IOL y IIL suelen ser muy pequeños y tiende a tomarse los mismos valores que en el estado lógico alto por lo que en conclusión el inversor CD4069 tiene un fan-out teórico de aproximadamente 50 en ambos estados.
+
+###### Simulación.
+En esta etapa se realizó una simulación para verificar este valor, se realizó la misma simulación que para el TTL:
 ![Simulacion fan-outCMOS](Simulaciones-Parte2/SimFanOutCMOS.png)
+
+Con lo que se obtuvieron los siguientes valores
+
+En teoría, CMOS debería tener un fan-out mucho mayor que el TTL, debido a sus menores corrientes de entrada. Sin embargo, los resultados experimentales muestran un fan-out similar en ambos dispositivos aunque se mantiene la relación de que el fan-out del CMOS sea el mayor. Lo cual indica que en las condiciones del experimento y la simulación, las corrientes medidas en CMOS fueron significativamente mayores a las esperadas, lo cual sugiere problemas relacionados con el circuito, la medición o las condiciones de carga. Esto resalta la importancia de considerar las condiciones de prueba y el impacto de factores externos al comparar dispositivos digitales.
+
+#### 2. Disipación de potencia.
+Debido a la incongruencia obtenida en el Fan-out experimental, la disipación de potencia tambien cuenta con resultados que no concuerdan con el comportamiento teórico por los mismos factores que se mencionaron anteriormente.
+
+  ##### TTL 74LS04
+  
+
+  ##### CMOS CD4069
+
+#### 3. Implementación circuito funcional para CMOS y TTL.
+En el siguiente video se puede observar el funcionamiento del circuito propuesto de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
+
+
 ### Parte 3
+Para esta última etapa se realizaron las simulaciones de un oscilador en anillo de 3 estpas y otro de 5 etapas implementando un CMOS dado a que como se mencionó anteriormente es generalmente más eficiente, versátil y adecuado para aplicaciones modernas que priorizan el bajo consumo de energía y la flexibilidad en el diseño por lo que serán más visibles las etapas.
+
+Simulación del oscilador en anillo con 3 etapas en CMOS con el que se obtuvo una frecuencia de 1.718 MHz 
 ![Simulacion oscilador en anillo con 5 entradas en CMOS](Simulaciones-Parte3/OsciladorCMOS-con5.png)
+
+
+Simulación del oscilador en anillo con 5 etapas en CMOS con el que se obtuvo una frecuencia de 0.7689 MHz
 ![Simulacion oscilador en anillo con 3 entradas en CMOS](Simulaciones-Parte3/OsciladorCMOS-con3.png)
 
+Posterior a ello se dispuso a hacer el montaje experimental de ambos osciladores obteniendo los siguientes resultados
+
+Oscilador en anillo experimental con 3 etapas en CMOS con el que se obtuvo una frecuencia de 3.50 MHz
+
+Oscilador en anillo experimental con 5 etapas en CMOS con el que se obtuvo una frecuencia de 2.13 MHz
+
+La frecuencia de oscilación está inversamente relacionada con el número de etapas en el oscilador. Es decir, a mayor número de etapas, mayor será el tiempo total de propagación del circuito, lo que lleva a una frecuencia más baja. Esto ocurre porque cada etapa introduce un retardo debido a la conmutación de la puerta negadora, y el tiempo total de propagación se acumula a medida que aumenta el número de etapas. Por lo tanto un oscilador con tres etapas tendrá un tiempo de propagación más bajo y con ello, una frecuencia más alta, y un oscilador con 5 etapas tendrá un tiempo de propagación más alto y una frecuencia más baja.
+
 ## Conclusiones
+1. Los dispositivos CMOS (CD4069) demostraron ser más eficientes en términos de consumo energético, mayor rango de voltaje de operación y mejor tolerancia al ruido. Estas características los hacen ideales para aplicaciones de bajo consumo y entornos variados.
+   
+2. Por otro lado, los dispositivos TTL (74LS04) ofrecen tiempos de propagación significativamente menores, lo que los hace más adecuados para aplicaciones de alta velocidad o con requisitos estrictos de compatibilidad lógica. Sin embargo, consumen más energía y tienen un rango de operación más limitado.
+   
+3. En teoría, los dispositivos CMOS presentan un fan-out mayor debido a sus bajas corrientes de entrada y salida. Sin embargo, los resultados experimentales indicaron valores similares para ambos dispositivos, probablemente debido a factores externos como la impedancia de carga y condiciones de medición. Esto subraya la importancia de optimizar las condiciones experimentales para reflejar mejor el comportamiento teórico.
+   
+4. La frecuencia de oscilación en los osciladores en anillo está inversamente relacionada con el número de etapas, como se observó tanto en las simulaciones como en los resultados experimentales. Los osciladores con tecnología CMOS ofrecieron una implementación más eficiente en términos de consumo de energía, aunque con una sensibilidad mayor a las condiciones externas.
+   
+5. Tanto los dispositivos TTL como CMOS mostraron desviaciones respecto a los valores teóricos debido a factores como el uso de resistencias altas y la influencia de impedancias no ideales. Esto resalta la necesidad de considerar en próximos laboratorios la configuración del circuito para obtener resultados precisos y reproducibles.
+   
+6. La elección entre TTL y CMOS debe basarse en las necesidades específicas de la aplicación. Para sistemas que priorizan la velocidad y compatibilidad, TTL es una opción adecuada. Para aplicaciones de bajo consumo energético y alta flexibilidad, CMOS es preferible.
 
 ## Referencias
