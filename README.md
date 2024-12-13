@@ -196,6 +196,7 @@ La frecuencia de oscilación está inversamente relacionada con el número de et
 
 ## Referencias
 -Uelectronics.DataSheet TTL 74LS04(https://uelectronics.com/producto/cd4049be-inversor-hexadecima-dip-16/)
+
 -Uelectronics.Datasheet CMOS CD4069(https://uelectronics.com/producto/74ls04-compuerta-not-sn74ls04n/?srsltid=AfmBOopSNMqnw9-t7gDojXjZ6zj2RbfQPI2q1okUrkqvsDHkUBCRXMIU)
 
--
+
