@@ -3,14 +3,11 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
 
 ## Procedimeinto
 ### Parte 1
-  1.
-     Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
+  1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
   
-  2. 
-  Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
+  2. Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
   
-  3. 
-  Se diseñó un circuito de prueba para cada dispositivo en el que se aplicó una señal cuadrada de 1 kHz con una amplitud adecuada. Utilizando un osciloscopio, generador de señales y una fuente DC se midieron los niveles de V<sub>OUT</sub> en función de V<sub>IN</sub> para obtener la función de transferencia y determinar   V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>.
+  3. Se diseñó un circuito de prueba para cada dispositivo en el que se aplicó una señal cuadrada de 1 kHz con una amplitud adecuada. Utilizando un osciloscopio, generador de señales y una fuente DC se midieron los niveles de V<sub>OUT</sub> en función de V<sub>IN</sub> para obtener la función de transferencia y determinar   V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>.
   
 ### Parte 2
   1. Se determinó el fan-in y fan-out de cada uno de los dispositivos; el fan-in consiste en el número de entradas mientras que el fan-out se determinó con midiendo la relación entre las corrientes de entrada y salida con cada uno de los dispositivos.
@@ -24,7 +21,9 @@ En esta última parte se planteó estudiar el oscilador en anillo basado en la c
 ## Resultados y análisis
 
 ### Parte 1
-1. Al comparar las especificas de los dos dispositivos se pudo determinar:
+#### 1. Comparación de los datascheets.
+
+Al comparar las especificaciones de los dos dispositivos se pudo determinar
 
 El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando las entradas están en un estado estable, ya que los transistores CMOS consumen corriente principalmente durante las transiciones. En contraste, el 74LS04, al ser de tecnología TTL, consume corriente constantemente debido a la polarización activa de los transistores bipolares. Entonces el CD4069 es mucho más eficiente en cuanto a consumo energético para aplicaciones de bajo consumo
   
@@ -41,7 +40,9 @@ El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando
 Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
 
 
-2. Los circuitos equivalentes del 74LS04 (TTL) y el CD4069 (CMOS) representan cómo están diseñadas internamente las compuertas NOT en cada dispositivo.
+#### 2. Circuitos equivalentes
+
+Los circuitos equivalentes del 74LS04 (TTL) y el CD4069 (CMOS) representan cómo están diseñadas internamente las compuertas NOT en cada dispositivo.
 El circuito equivalente del TTL es el siguiente
 ![Circuito equivalente TTL](Datasheets/Circuito equivalebte TTL 74LS04.png)
 
@@ -49,7 +50,8 @@ El circuito equivalente del CMOS es el siguiente
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png)
 Datasheets/Circuito equivalebte TTL 74LS04.png
 
-3. Con la señal cuadrada con una frecuencia de 1KHZ se obtuvieron los siguientes resultados, tanto en la simulaciones como en la práctica que se pueden contrastar con los teóricos.
+#### 3. Montaje y simulaciones
+  Con la señal cuadrada con una frecuencia de 1KHZ se obtuvieron los siguientes resultados, tanto en la simulaciones como en la práctica que se pueden contrastar con los teóricos.
 
 ##### TTL 74LS04
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png) tabla y simulación
@@ -71,6 +73,7 @@ En cuanto a la salida,el V<sub>OH</sub> es relativamente cercano al valor teóri
  En los resultados se observa que el CMOS es más sensible a las resistencias que el TTL, debido a la alta impedancia de entrada y baja capacidad de corriente en la salida. Aunque el TTL estuvo más próximo a los valores teóricos, ambos negadores fueron afectados por las condiciones experimentales y los altos valores en las resistencias.
  
 ### Parte 2
+
 ![Simulacion fan-outCMOS](Simulaciones-Parte2/SimFanOutCMOS.png)
 ### Parte 3
 ![Simulacion oscilador en anillo con 5 entradas en CMOS](Simulaciones-Parte3/OsciladorCMOS-con5.png)
