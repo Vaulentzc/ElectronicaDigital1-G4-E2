@@ -48,20 +48,22 @@ Datasheets/Circuito equivalebte TTL 74LS04.png
 
 3. Con la señal cuadrada con una frecuencia de 1KHZ se obtuvieron los siguientes resultados, tanto en la simulaciones como en la práctica que se pueden contrastar con los teóricos.
 
-####TTL 74LS04
+#### TTL 74LS04
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png) tabla y simulación
    El circuito TTL 74LS04 presenta un buen desempeño en términos de niveles altos de voltaje (V<sub>OH</sub>​), pero tiene problemas con los niveles bajos (V<sub>IL</sub> y V<sub>OL</sub>), lo cual podría generar inconsistencias lógicas. Además, los tiempos de respuesta son considerablemente más lentos que los valores teóricos, especialmente en la práctica, indicando limitaciones en la velocidad del dispositivo y condiciones experimentales.
 
 Aunque si se considera el ciruito implementado las resistencias introducen retardos, distorsionan las señales cuadradas y afectan las mediciones de voltaje lógico, entonces se podría haber probado con valores mucho menores de resistencias para obtener resultados más adecuados. En la entrada Afecta la corriente de entrada, causando un incremento en V<sub>IL</sub>​ y posibles problemas en la interpretación de niveles bajos. En la salida, aumenta V<sub>OL</sub> e incrementa los tiempos de subida (tr) y bajada (tf), y los de propagación por el efecto RC.
 
 
- ####CMOS CD4069
+ #### CMOS CD4069
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png) tabla y simulación
 
 Al analizar los datos de entrada, los valores medidos en práctica y simulación son muy inferiores a los valores teóricos.
 Esto se debe a que el CMOS es muy sensible a la impedancia en la entrada. Al colocar una resistencia de 10 kΩ, se limita la corriente que puede cargar la capacitancia de la puerta de entrada, lo cual altera los niveles de voltaje, por lo que no está obteniendo los valores lógicos requeridos.
 
 En cuanto a la salida,el V<sub>OH</sub> es relativamente cercano al valor teórico (4.95V a 4.64V), por lo que las tecnologías CMOS tienen baja corriente de salida. En cuanto a los tiempos de subida, bajada y propagación que son mucho mayores a los teóricos puede ser debido ala constante de tiempo RC causada por las resistencias de 10 kΩ y la capacitancia parásita del circuito
+
+#### ---
 
  En los resultados se observa que el CMOS es más sensible a las resistencias que el TTL, debido a la alta impedancia de entrada y baja capacidad de corriente en la salida. Aunque el TTL estuvo más próximo a los valores teóricos, ambos negadores fueron afectados por las condiciones experimentales y los altos valores en las resistencias.
  
