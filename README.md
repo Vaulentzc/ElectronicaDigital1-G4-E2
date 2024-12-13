@@ -15,7 +15,8 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
   2.3. se implementó un circuito de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
 
 ### Parte 3
-En esta última parte de quería estudiar el oscilador en anillo basado en la compuerta NOT. Para ello se realizó el montaje de dos osciladores en anillo con el negador CMOS, uno con tres entradas y el otro con cinco entradas como se observa a continuación.
+En esta última parte se planteó estudiar el oscilador en anillo basado en la compuerta NOT. Para ello se realizó el montaje de dos osciladores en anillo con el negador CMOS, uno con tres entradas y el otro con cinco entradas como se observa a continuación.
+
   
  En base a esto, se realizó la lectura de de su frecuencia de oscilación y de la forma de su onda, para luego hacer una comparación entre amboos osciladores según lo observado.
 
