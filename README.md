@@ -6,7 +6,7 @@ El propósito de este laboratorio fue estudiar y comparar las características d
 
 Además, se implementaron osciladores en anillo para explorar la viabilidad de cada tecnología en aplicaciones prácticas y contrastar su comportamiento en términos de frecuencia de oscilación y forma de onda. Este estudio permite comprender las ventajas y limitaciones de ambas tecnologías, guiando la selección adecuada según los requerimientos de diseño.
 
-## Procedimeinto
+## Procedimiento
 ### Parte 1
   1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. 
   
@@ -21,12 +21,12 @@ Además, se implementaron osciladores en anillo para explorar la viabilidad de c
 
 ### Parte 3
 En esta última parte se planteó estudiar el oscilador en anillo basado en la compuerta NOT. Para ello se realizó el montaje de dos osciladores en anillo con el negador CMOS, por facilidad se escogió hacerlos con 3 y con 5 entradas.
- En base a esto, se realizó la lectura de de su frecuencia de oscilación y de la forma de su onda, para luego hacer una comparación entre amboos osciladores según lo observado.
+ En base a esto, se realizó la lectura de su frecuencia de oscilación y de la forma de su onda, para luego hacer una comparación entre ambos osciladores según lo observado.
 
 ## Resultados y análisis
 
 ### Parte 1
-#### 1. Comparación de los datascheets.
+#### 1. Comparación de los datasheets.
 
 Al comparar las especificaciones de los dos dispositivos que se encuentran en los datasheets se pudo determinar
 
@@ -34,13 +34,13 @@ El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando
   
   De la misma manera el CD4069 tiene un rango de voltaje de alimentación más amplio (3 V a 15 V) mientras que el 74LS04 opera en un rango más limitado (4.75 V y 5.25 V). Esto hace que el CD4069 sea más versátil en aplicaciones con diferentes niveles de alimentación o baterías. Además, la tecnología CMOS puede operar en un rango de temperatura más amplio (-55°C a 125°C) en comparación con el rango típico del 74LS04 (-40°C a 85°C) lo que permite que el CD4069 tenga una gama más grande de aplicaciones.
   
-  Por otro lado, el 74LS04 tiene tiempos de propagación mucho más cortos que el CD4069, gracias a la tecnología TTL, que está optimizada para altas velocidades. El tiempo de propagación del 74LS04 es de aproximadamente 10 ns, mientras que el CD4069 tiene tiempos de propagación en el rango de 50 ns a 200 ns, dependiendo del voltaje de alimentación. Esto hace que el 74LS04 sea más adecuado para aplicaciones de alta frecuencia donde la velocidad es crítica. Tambien es más compatible con otros circuitos TTL sin necesidad de ajustes de niveles, mientras que el CMOS requiere atención especial para la compatibilidad con niveles lógicos TTL/CMOS.
+  Por otro lado, el 74LS04 tiene tiempos de propagación mucho más cortos que el CD4069, gracias a la tecnología TTL, que está optimizada para altas velocidades. El tiempo de propagación del 74LS04 es de aproximadamente 10 ns, mientras que el CD4069 tiene tiempos de propagación en el rango de 50 ns a 200 ns, dependiendo del voltaje de alimentación. Esto hace que el 74LS04 sea más adecuado para aplicaciones de alta frecuencia donde la velocidad es crítica. También es más compatible con otros circuitos TTL sin necesidad de ajustes de niveles, mientras que el CMOS requiere atención especial para la compatibilidad con niveles lógicos TTL/CMOS.
        
   Si nos centramos en los niveles lógicos de entrada el 74LS04 tiene niveles lógicos específicos para tecnología TTL, mientras que el CD4069 ajusta sus niveles en función de la alimentación (Vcc). Esto hace que el CMOS sea más flexible en diferentes entornos de voltaje. En términos de salida, el CD4069 tiene valores más cercanos a los límites de Vcc (VOH y VOL), lo que lo hace ideal para aplicaciones digitales puras.
   
-  Tambien se considera que el 74LS04 consume más corriente en sus entradas y salidas, mientras que el CD4069 tiene una corriente de entrada casi nula, ideal para circuitos de bajo consumo. Se puede decir que las corrientes de salida también reflejan que el 74LS04 está diseñado para manejar mayores cargas.
+  También se considera que el 74LS04 consume más corriente en sus entradas y salidas, mientras que el CD4069 tiene una corriente de entrada casi nula, ideal para circuitos de bajo consumo. Se puede decir que las corrientes de salida también reflejan que el 74LS04 está diseñado para manejar mayores cargas.
   
-  En cuanto a tiempos de propegación, el TTL es significativamente más rápido, lo que lo hace más adecuado para aplicaciones que requieren alta velocidad.Mientras que el CMOS al ser más lento, es más adecuado para aplicaciones de baja frecuencia o señales analógicas.
+  En cuanto a tiempos de propagación, el TTL es significativamente más rápido, lo que lo hace más adecuado para aplicaciones que requieren alta velocidad.Mientras que el CMOS al ser más lento, es más adecuado para aplicaciones de baja frecuencia o señales analógicas.
     
 Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
 
@@ -66,7 +66,7 @@ A partir de ello se obtuvieron las siguientes medidas
 
    El circuito TTL 74LS04 presenta un buen desempeño en términos de niveles altos de voltaje (V<sub>OH</sub>​), pero tiene problemas con los niveles bajos (V<sub>IL</sub> y V<sub>OL</sub>), lo cual podría generar inconsistencias lógicas. Además, los tiempos de respuesta son considerablemente más lentos que los valores teóricos, especialmente en la práctica, indicando limitaciones en la velocidad del dispositivo y condiciones experimentales.
 
-Aunque si se considera el ciruito implementado las resistencias introducen retardos, distorsionan las señales cuadradas y afectan las mediciones de voltaje lógico, entonces se podría haber probado con valores mucho menores de resistencias para obtener resultados más adecuados. En la entrada Afecta la corriente de entrada, causando un incremento en V<sub>IL</sub>​ y posibles problemas en la interpretación de niveles bajos. En la salida, aumenta V<sub>OL</sub> e incrementa los tiempos de subida (tr) y bajada (tf), y los de propagación por el efecto RC.
+Aunque si se considera el circuito implementado las resistencias introducen retardos, distorsionan las señales cuadradas y afectan las mediciones de voltaje lógico. Por lo tanto se podría haber probado con valores mucho menores de resistencias para obtener resultados más adecuados. En la entrada Afecta la corriente de entrada, causando un incremento en V<sub>IL</sub>​ y posibles problemas en la interpretación de niveles bajos. En la salida, aumenta V<sub>OL</sub> e incrementa los tiempos de subida (tr) y bajada (tf), y los de propagación por el efecto RC.
 
 
  ##### CMOS CD4069
@@ -79,7 +79,7 @@ A partir de ello se obtuvieron las siguientes medidas
 Al analizar los datos de entrada, los valores medidos en práctica y simulación son muy inferiores a los valores teóricos.
 Esto se debe a que el CMOS es muy sensible a la impedancia en la entrada. Al colocar una resistencia de 10 kΩ, se limita la corriente que puede cargar la capacitancia de la puerta de entrada, lo cual altera los niveles de voltaje, por lo que no está obteniendo los valores lógicos requeridos.
 
-En cuanto a la salida,el V<sub>OH</sub> es relativamente cercano al valor teórico (4.95V a 4.64V), por lo que las tecnolOgías CMOS tienen baja corriente de salida. En cuanto a los tiempos de subida, bajada y propagación que son mucho mayores a los teóricos puede ser debido ala constante de tiempo RC causada por las resistencias de 10 kΩ y la capacitancia parásita del circuito
+En cuanto a la salida,el V<sub>OH</sub> es relativamente cercano al valor teórico (4.95V a 4.64V), por lo que las tecnologías CMOS tienen baja corriente de salida. En cuanto a los tiempos de subida, bajada y propagación que son mucho mayores a los teóricos puede ser debido a la constante de tiempo RC causada por las resistencias de 10 kΩ y la capacitancia parásita del circuito
 
 #### ---
 
@@ -125,7 +125,7 @@ La corriente máxima de salida (IOH) es de -0,52 mA pero se toma el valor absolu
 Por lo tanto, el fan-out en estado lógico alto es 50.
 
   ###### Estado lógico bajo.
-En este caso, los valores de los CMOS para IOL y IIL suelen ser muy pequeños y tiende a tomarse los mismos valores que en el estado lógico alto por lo que en conclusión el inversor CD4069 tiene un fan-out teórico de aproximadamente 50 en ambos estados.
+En este caso, los valores de IOL e IIL para CMOS suelen ser muy pequeños, por lo que tienden a tomarse como iguales a los del estado lógico alto. En conclusión, el inversor CD4069 tiene un fan-out teórico de aproximadamente 50 en ambos estados.
 
 ###### Simulación.
 En esta etapa se realizó una simulación para verificar este valor, se realizó la misma simulación que para el TTL:
@@ -135,10 +135,10 @@ Con lo que se obtuvieron los siguientes valores
 
 ![Simulacion fan-outCMOS](Parte2/ResultadosParte2/ResultadosFanOutCMOS.png)
 
-En teoría, CMOS debería tener un fan-out mucho mayor que el TTL, debido a sus menores corrientes de entrada. Sin embargo, los resultados experimentales muestran un fan-out similar en ambos dispositivos aunque se mantiene la relación de que el fan-out del CMOS sea el mayor. Lo cual indica que en las condiciones del experimento y la simulación, las corrientes medidas en CMOS fueron significativamente mayores a las esperadas, lo cual sugiere problemas relacionados con el circuito, la medición o las condiciones de carga. Esto resalta la importancia de considerar las condiciones de prueba y el impacto de factores externos al comparar dispositivos digitales.
+En teoría, CMOS debería tener un fan-out mucho mayor que el TTL, debido a sus menores corrientes de entrada. Sin embargo, los resultados experimentales muestran un fan-out similar en ambos dispositivos aunque se mantiene la relación de que el fan-out del CMOS sea mayor. Lo cual indica que en las condiciones del experimento y la simulación, las corrientes medidas en CMOS fueron significativamente mayores a las esperadas, lo cual sugiere problemas relacionados con el circuito, la medición o las condiciones de carga. Esto resalta la importancia de considerar las condiciones de prueba y el impacto de factores externos al comparar dispositivos digitales.
 
 #### 2. Disipación de potencia.
-Debido a la incongruencia obtenida en el Fan-out experimental, la disipación de potencia tambien cuenta con resultados que no concuerdan con el comportamiento teórico por los mismos factores que se mencionaron anteriormente.
+Debido a la incongruencia obtenida en el Fan-out experimental, la disipación de potencia también cuenta con resultados que no concuerdan con el comportamiento teórico por los mismos factores que se mencionaron anteriormente.
 
   ##### TTL 74LS04
   ![Dis.potencia TTL](Parte2/ResultadosParte2/ResultadosDisipacionPotenciaTTL.png)
