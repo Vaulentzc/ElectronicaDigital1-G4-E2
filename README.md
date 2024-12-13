@@ -3,13 +3,13 @@ Desarrollo de la práctica 1 de laboratorio sobre la comparación de tecnología
 
 ## Procedimeinto
 ### Parte 1
-  #### 1.
+  1.
      Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
   
-  #### 2. 
+  2. 
   Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
   
-  #### 3. 
+  3. 
   Se diseñó un circuito de prueba para cada dispositivo en el que se aplicó una señal cuadrada de 1 kHz con una amplitud adecuada. Utilizando un osciloscopio, generador de señales y una fuente DC se midieron los niveles de V<sub>OUT</sub> en función de V<sub>IN</sub> para obtener la función de transferencia y determinar   V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>.
   
 ### Parte 2
@@ -51,14 +51,14 @@ Datasheets/Circuito equivalebte TTL 74LS04.png
 
 3. Con la señal cuadrada con una frecuencia de 1KHZ se obtuvieron los siguientes resultados, tanto en la simulaciones como en la práctica que se pueden contrastar con los teóricos.
 
-#### TTL 74LS04
+##### TTL 74LS04
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png) tabla y simulación
    El circuito TTL 74LS04 presenta un buen desempeño en términos de niveles altos de voltaje (V<sub>OH</sub>​), pero tiene problemas con los niveles bajos (V<sub>IL</sub> y V<sub>OL</sub>), lo cual podría generar inconsistencias lógicas. Además, los tiempos de respuesta son considerablemente más lentos que los valores teóricos, especialmente en la práctica, indicando limitaciones en la velocidad del dispositivo y condiciones experimentales.
 
 Aunque si se considera el ciruito implementado las resistencias introducen retardos, distorsionan las señales cuadradas y afectan las mediciones de voltaje lógico, entonces se podría haber probado con valores mucho menores de resistencias para obtener resultados más adecuados. En la entrada Afecta la corriente de entrada, causando un incremento en V<sub>IL</sub>​ y posibles problemas en la interpretación de niveles bajos. En la salida, aumenta V<sub>OL</sub> e incrementa los tiempos de subida (tr) y bajada (tf), y los de propagación por el efecto RC.
 
 
- #### CMOS CD4069
+ ##### CMOS CD4069
 ![Circuito equivalente CMOS](Datasheets/Circuito equivalenteCMOS-CD4049.png) tabla y simulación
 
 Al analizar los datos de entrada, los valores medidos en práctica y simulación son muy inferiores a los valores teóricos.
