@@ -22,7 +22,8 @@ En esta última parte se planteó estudiar el oscilador en anillo basado en la c
 
 ### Parte 1
 1. Al comparar las especificas de los dos dispositivos se pudo determinar:
-  El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando las entradas están en un estado estable, ya que los transistores CMOS consumen corriente principalmente durante las transiciones. En contraste, el 74LS04, al ser de tecnología TTL, consume corriente constantemente debido a la polarización activa de los transistores bipolares. Entonces el CD4069 es mucho más eficiente en cuanto a consumo energético para aplicaciones de bajo consumo
+
+El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando las entradas están en un estado estable, ya que los transistores CMOS consumen corriente principalmente durante las transiciones. En contraste, el 74LS04, al ser de tecnología TTL, consume corriente constantemente debido a la polarización activa de los transistores bipolares. Entonces el CD4069 es mucho más eficiente en cuanto a consumo energético para aplicaciones de bajo consumo
 
   De la misma manera el CD4069 tiene un rango de voltaje de alimentación más amplio (3 V a 15 V) mientras que el 74LS04 opera en un rango más limitado (4.75 V y 5.25 V). Esto hace que el CD4069 sea más versátil en aplicaciones con diferentes niveles de alimentación o baterías. Además, la tecnología CMOS puede operar en un rango de temperatura más amplio (-55°C a 125°C) en comparación con el rango típico del 74LS04 (-40°C a 85°C) lo que permite que el CD4069 tenga una gama más grande de aplicaciones.
 
