@@ -36,6 +36,9 @@ El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando
   En cuanto a tiempos de propegación, el TTL es significativamente más rápido, lo que lo hace más adecuado para aplicaciones que requieren alta velocidad.Mientras que el CMOS al ser más lento, es más adecuado para aplicaciones de baja frecuencia o señales analógicas.
   
 Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
+
+
+2. 
    
 ### Parte 2
 ![Simulacion fan-outCMOS](Simulaciones-Parte2/SimFanOutCMOS.png)
