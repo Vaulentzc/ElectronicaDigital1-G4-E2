@@ -23,19 +23,19 @@ En esta última parte se planteó estudiar el oscilador en anillo basado en la c
 ### Parte 1
 1. Al comparar las especificas de los dos dispositivos se pudo determinar:
 
-El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando las entradas están en un estado estable, ya que los transistores CMOS consumen corriente principalmente durante las transiciones. En contraste, el 74LS04, al ser de tecnología TTL, consume corriente constantemente debido a la polarización activa de los transistores bipolares. Entonces el CD4069 es mucho más eficiente en cuanto a consumo energético para aplicaciones de bajo consumo
-
-  De la misma manera el CD4069 tiene un rango de voltaje de alimentación más amplio (3 V a 15 V) mientras que el 74LS04 opera en un rango más limitado (4.75 V y 5.25 V). Esto hace que el CD4069 sea más versátil en aplicaciones con diferentes niveles de alimentación o baterías. Además, la tecnología CMOS puede operar en un rango de temperatura más amplio (-55°C a 125°C) en comparación con el rango típico del 74LS04 (-40°C a 85°C) lo que permite que el CD4069 tenga una gama más grande de aplicaciones.
-
-  Por otro lado, el 74LS04 tiene tiempos de propagación mucho más cortos que el CD4069, gracias a la tecnología TTL, que está optimizada para altas velocidades. El tiempo de propagación del 74LS04 es de aproximadamente 10 ns, mientras que el CD4069 tiene tiempos de propagación en el rango de 50 ns a 200 ns, dependiendo del voltaje de alimentación. Esto hace que el 74LS04 sea más adecuado para aplicaciones de alta frecuencia donde la velocidad es crítica. Tambien es más compatible con otros circuitos TTL sin necesidad de ajustes de niveles, mientras que el CMOS requiere atención especial para la compatibilidad con niveles lógicos TTL/CMOS.
-     
- Si nos centramos en los niveles lógicos de entrada el 74LS04 tiene niveles lógicos específicos para tecnología TTL, mientras que el CD4069 ajusta sus niveles en función de la alimentación (Vcc). Esto hace que el CMOS sea más flexible en diferentes entornos de voltaje. En términos de salida, el CD4069 tiene valores más cercanos a los límites de Vcc (VOH y VOL), lo que lo hace ideal para aplicaciones digitales puras.
-
-  Tambien se considera que el 74LS04 consume más corriente en sus entradas y salidas, mientras que el CD4069 tiene una corriente de entrada casi nula, ideal para circuitos de bajo consumo. Se puede decir que las corrientes de salida también reflejan que el 74LS04 está diseñado para manejar mayores cargas.
-
-  En cuanto a tiempos de propegación, el TTL es significativamente más rápido, lo que lo hace más adecuado para aplicaciones que requieren alta velocidad.Mientras que el CMOS al ser más lento, es más adecuado para aplicaciones de baja frecuencia o señales analógicas.
+  El de tecnología CMOS, tiene un consumo de corriente extremadamente bajo cuando las entradas están en un estado estable, ya que los transistores CMOS consumen corriente principalmente durante las transiciones. En contraste, el 74LS04, al ser de tecnología TTL, consume corriente constantemente debido a la polarización activa de los transistores bipolares. Entonces el CD4069 es mucho más eficiente en cuanto a consumo energético para aplicaciones de bajo consumo
   
-Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
+    De la misma manera el CD4069 tiene un rango de voltaje de alimentación más amplio (3 V a 15 V) mientras que el 74LS04 opera en un rango más limitado (4.75 V y 5.25 V). Esto hace que el CD4069 sea más versátil en aplicaciones con diferentes niveles de alimentación o baterías. Además, la tecnología CMOS puede operar en un rango de temperatura más amplio (-55°C a 125°C) en comparación con el rango típico del 74LS04 (-40°C a 85°C) lo que permite que el CD4069 tenga una gama más grande de aplicaciones.
+  
+    Por otro lado, el 74LS04 tiene tiempos de propagación mucho más cortos que el CD4069, gracias a la tecnología TTL, que está optimizada para altas velocidades. El tiempo de propagación del 74LS04 es de aproximadamente 10 ns, mientras que el CD4069 tiene tiempos de propagación en el rango de 50 ns a 200 ns, dependiendo del voltaje de alimentación. Esto hace que el 74LS04 sea más adecuado para aplicaciones de alta frecuencia donde la velocidad es crítica. Tambien es más compatible con otros circuitos TTL sin necesidad de ajustes de niveles, mientras que el CMOS requiere atención especial para la compatibilidad con niveles lógicos TTL/CMOS.
+       
+   Si nos centramos en los niveles lógicos de entrada el 74LS04 tiene niveles lógicos específicos para tecnología TTL, mientras que el CD4069 ajusta sus niveles en función de la alimentación (Vcc). Esto hace que el CMOS sea más flexible en diferentes entornos de voltaje. En términos de salida, el CD4069 tiene valores más cercanos a los límites de Vcc (VOH y VOL), lo que lo hace ideal para aplicaciones digitales puras.
+  
+    Tambien se considera que el 74LS04 consume más corriente en sus entradas y salidas, mientras que el CD4069 tiene una corriente de entrada casi nula, ideal para circuitos de bajo consumo. Se puede decir que las corrientes de salida también reflejan que el 74LS04 está diseñado para manejar mayores cargas.
+  
+    En cuanto a tiempos de propegación, el TTL es significativamente más rápido, lo que lo hace más adecuado para aplicaciones que requieren alta velocidad.Mientras que el CMOS al ser más lento, es más adecuado para aplicaciones de baja frecuencia o señales analógicas.
+    
+  Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrada válidos y los niveles de salida válidos, lo que lo hace más tolerante al ruido en las señales.
 
 
 2. 
