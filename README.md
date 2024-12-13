@@ -8,7 +8,7 @@ Además, se implementaron osciladores en anillo para explorar la viabilidad de c
 
 ## Procedimeinto
 ### Parte 1
-  1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros eléctricos relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
+  1. Se revisaron los datasheets de los dispositivos 74LS04 y CD4069 proporcionados por el fabricante. Se identificaron y registraron los parámetros relevantes como V<sub>IH</sub>, V<sub>IL</sub>, V<sub>OH</sub>, V<sub>OL</sub>, t<sub>PHL</sub>, t<sub>PLH</sub>​, entre otros, para realizar una comparación directa. La información se organizó en una tabla para facilitar el análisis.
   
   2. Se analizaron los esquemas de aplicación recomendados en los datasheets para identificar los circuitos equivalentes típicos.
   
