@@ -49,23 +49,20 @@ Por último,  el CD4069 tiene márgenes más amplios entre los niveles de entrad
 
 Los circuitos equivalentes del 74LS04 (TTL) y el CD4069 (CMOS) representan cómo están diseñadas internamente las compuertas NOT en cada dispositivo.
 El circuito equivalente del TTL es el siguiente:
-![Circuito equivalente TTL]([Parte1/Datasheets/Circuito equivalente-TTL 74LS04.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/ecb55ed399cde78d55f891e655c1c9d768b6fda7/Parte1/Datasheets/Circuito%20equivalente-TTL%2074LS04.png))
+[Parte1/Datasheets/Circuito equivalente-TTL 74LS04.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/ecb55ed399cde78d55f891e655c1c9d768b6fda7/Parte1/Datasheets/Circuito%20equivalente-TTL%2074LS04.png))
 
 El circuito equivalente del CMOS es el siguiente:
-![Circuito equivalente CMOS](Parte1/Datasheets/Circuito equivalenteCMOS-CD4049.png)
+([Parte1/Datasheets/Circuito equivalenteCMOS-CD4049.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte1/Datasheets/Circuito%20equivalenteCMOS-CD4049.png))
 
 #### 3. Montaje y simulaciones
   Aplicando una señal cuadrada con una frecuencia de 1 KHz se obtuvieron los siguientes resultados, tanto en la simulaciones como en la práctica que se pueden contrastar con los teóricos.
 
 ##### TTL 74LS04
 Se puede observar la simulación implementada
-![SimulacionParte1TTL](Parte1/Fotos de las simulaciones- Parte1/SimCMOS.png)
-
-De la misma manera las señales obetnidas en el montaje; tambien se pueden visualizar otras imágenes en la carpeta de la parte 1
-![MontajeParte1TTL](Parte1/Fotos practica-Parte1/Ondas Cuadradas.jpeg)
+![SimulacionParte1TTL]([Parte1/Fotos de las simulaciones- Parte1/SimCMOS.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte1/Fotos%20de%20las%20simulaciones-%20Parte1/SimTTL.png))
 
 A partir de ello se obtuvieron las siguientes medidas
-![ResultadosParte1TTL](Parte1/Resultados parte1/TablaResultadosTTL.png)
+([Parte1/Resultados parte1/TablaResultadosTTL.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte1/Resultados%20parte1/TablaResultadosTTL%20.png))
 
    El circuito TTL 74LS04 presenta un buen desempeño en términos de niveles altos de voltaje (V<sub>OH</sub>​), pero tiene problemas con los niveles bajos (V<sub>IL</sub> y V<sub>OL</sub>), lo cual podría generar inconsistencias lógicas. Además, los tiempos de respuesta son considerablemente más lentos que los valores teóricos, especialmente en la práctica, indicando limitaciones en la velocidad del dispositivo y condiciones experimentales.
 
@@ -74,13 +71,10 @@ Aunque si se considera el ciruito implementado las resistencias introducen retar
 
  ##### CMOS CD4069
 Se puede observar la simulación implementada
-![SimulacionParte1CMOS](Parte1/Fotos de las simulaciones- Parte1/SimCMOS.png)
-
-De la misma manera las señales obetnidas en el montaje; tambien se pueden visualizar otras imágenes en la carpeta de la parte 1
-![MontajeParte1CMOS(Parte1/Fotos practica-Parte1/Ondas Caracterizacion.jpeg)
+([Parte1/Fotos de las simulaciones- Parte1/SimCMOS.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte1/Fotos%20de%20las%20simulaciones-%20Parte1/SimCMOS.png))
 
 A partir de ello se obtuvieron las siguientes medidas
-![ResultadosParte1CMOS](Parte1/Resultados parte1/TablaResultadosCMOS.png)
+([Parte1/Resultados parte1/TablaResultadosCMOS.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte1/Resultados%20parte1/TablaResultadosCMOS.png))
 
 Al analizar los datos de entrada, los valores medidos en práctica y simulación son muy inferiores a los valores teóricos.
 Esto se debe a que el CMOS es muy sensible a la impedancia en la entrada. Al colocar una resistencia de 10 kΩ, se limita la corriente que puede cargar la capacitancia de la puerta de entrada, lo cual altera los niveles de voltaje, por lo que no está obteniendo los valores lógicos requeridos.
@@ -117,7 +111,7 @@ En conclusión, el inversor 74LS04 tiene un fan-out teórico de 20 en ambos esta
 En esta etapa se realizó una simulación para verificar este valor, conectando diferentes n ´umeros de unidades de carga a la salida del inversor y midiendo la corriente requerida en cada configuración:
 
 Con dicha simulación se midieron los valores en estado lógico alto y bajo para que al al final se recopile el menor valor.
-![Simulacion fan-outCMOS](Parte2/Fotos de las simulaciones-Parte2/SimFanOutTTL.png)
+([Parte2/Fotos de las simulaciones-Parte2/SimFanOutTTL.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte2/Fotos%20de%20las%20simulaciones-Parte2/SimFanOutTTL.png))
 ![Simulacion fan-outCMOS](Parte2/ResultadosParte2/ResultadosFanOutTTL.png)
 
 
@@ -135,7 +129,7 @@ En este caso, los valores de los CMOS para IOL y IIL suelen ser muy pequeños y 
 
 ###### Simulación.
 En esta etapa se realizó una simulación para verificar este valor, se realizó la misma simulación que para el TTL:
-![Simulacion fan-outCMOS](Parte2/Fotos de las simulaciones-Parte2/SimFanOutCMOS.png)
+([Parte2/Fotos de las simulaciones-Parte2/SimFanOutCMOS.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte2/Fotos%20de%20las%20simulaciones-Parte2/SimFanOutCMOS.png))
 
 Con lo que se obtuvieron los siguientes valores
 
@@ -157,27 +151,25 @@ Debido a la incongruencia obtenida en el Fan-out experimental, la disipación de
 #### 3. Implementación circuito funcional para CMOS y TTL.
 En el siguiente video se puede observar el funcionamiento del circuito propuesto de entrada y de salida para que fuera funcional tanto para el TTL como para el CMOS teniendo en cuenta los parámetros encontrados en la sección anterior para analizar el comportamiento del mismo.
 
-![FotoCircuitoPropuesto](Parte2/Fotos practica-parte2/Circuito Propuesto.jpeg)
-
-![VideoCircuitoPropuesto](Parte2/Fotos practica-parte2/Video Circuito.mp4)
+([Parte2/Fotos practica-parte2/Circuito Propuesto.jpeg](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte2/Fotos%20practica-parte2/Video%20Circuito.mp4))
 
 ### Parte 3
 Para esta última etapa se realizaron las simulaciones de un oscilador en anillo de 3 estpas y otro de 5 etapas implementando un CMOS dado a que como se mencionó anteriormente es generalmente más eficiente, versátil y adecuado para aplicaciones modernas que priorizan el bajo consumo de energía y la flexibilidad en el diseño por lo que serán más visibles las etapas.
 
 Simulación del oscilador en anillo con 3 etapas en CMOS con el que se obtuvo una frecuencia de 1.718 MHz 
-![Simulacion oscilador en anillo con 3 entradas en CMOS](Parte3/Fotos de las simulaciones-Parte3/OsciladorCMOS-con3.png)
+([Parte3/Fotos de las simulaciones-Parte3/OsciladorCMOS-con3.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte3/Fotos%20de%20las%20simulaciones-Parte3/OsciladorCMOS-con3.png))
 
 
 Simulación del oscilador en anillo con 5 etapas en CMOS con el que se obtuvo una frecuencia de 0.7689 MHz
-![Simulacion oscilador en anillo con 5 entradas en CMOS](Parte3/Fotos de las simulaciones-Parte3/OsciladorCMOS-con5.png)
+([Parte3/Fotos de las simulaciones-Parte3/OsciladorCMOS-con5.png](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte3/Fotos%20de%20las%20simulaciones-Parte3/OsciladorCMOS-con5.png))
 
 Posterior a ello se dispuso a hacer el montaje experimental de ambos osciladores obteniendo los siguientes resultados
 
 Oscilador en anillo experimental con 3 etapas en CMOS con el que se obtuvo una frecuencia de 3.50 MHz
-![montaje oscilador en anillo con 3 entradas en CMOS](Parte3/Fotos practica-parte3/5gates.jpeg)
+([Parte3/Fotos practica-parte3/5gates.jpeg](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte3/Fotos%20practica-parte3/5gates.jpeg))
 
 Oscilador en anillo experimental con 5 etapas en CMOS con el que se obtuvo una frecuencia de 2.13 MHz
-![montaje oscilador en anillo con 5 entradas en CMOS](Parte3/Fotos practica-parte3/3gates.jpeg)
+([Parte3/Fotos practica-parte3/3gates.jpeg](https://github.com/Vaulentzc/ElectronicaDigital1-laboratorio1/blob/bd185773e0bfe6394d03626681a8b66140edc500/Parte3/Fotos%20practica-parte3/3gates.jpeg))
 
 La frecuencia de oscilación está inversamente relacionada con el número de etapas en el oscilador. Es decir, a mayor número de etapas, mayor será el tiempo total de propagación del circuito, lo que lleva a una frecuencia más baja. Esto ocurre porque cada etapa introduce un retardo debido a la conmutación de la puerta negadora, y el tiempo total de propagación se acumula a medida que aumenta el número de etapas. Por lo tanto un oscilador con tres etapas tendrá un tiempo de propagación más bajo y con ello, una frecuencia más alta, y un oscilador con 5 etapas tendrá un tiempo de propagación más alto y una frecuencia más baja.
 
