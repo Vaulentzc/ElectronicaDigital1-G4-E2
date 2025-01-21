@@ -4,10 +4,8 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 ## 1. Dominio comportamental (especificación y algoritmo)
 ### 1.1. Diagrama de caja negra
 #### Inputs:
-  I1. red eléctrica.
-  
-  I2. Baterias cargadas.
-  
+  I1. red eléctrica.  
+  I2. Baterias cargadas.  
   I3. Botón de paro de emergencia.
   
   I4. Baterias cargadas.
