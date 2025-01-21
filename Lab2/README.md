@@ -20,6 +20,9 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 
 ### 1.2. Diagrama de flujo
 ### 1.3. Tablas de verdad
+
+La casa siempre va a estar energizada excepto en el caso de que se active el botón de emergencia. Se establece que la red eléctrica será la fuente principal de energía del sistema y el relé conmutador alimenta la casa directamente desde la red. Cuando hay un fallo en la red eléctrica, el sistema cambia automáticamente a las baterías. La energía solar no se usa directamente para alimentar la casa, sino que mantiene cargadas las baterías para garantizar un suministro continuo durante los cortes eléctricos.
+
 ## 2. Dominio físico inicial (circuito eléctrico)
 ## 3. Simulación en lenguaje ladder
 ## 4. Dominio estructural (red de compuertas lógicas)
