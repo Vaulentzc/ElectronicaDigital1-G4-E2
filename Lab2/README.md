@@ -1,7 +1,7 @@
 ﻿# Laboratorio 2
-## Dominio comportamental (especificación y algoritmo)
-## Dominio físico inicial (circuito eléctrico)
-## Simulación en lenguaje ladder
-## Dominio estructural (red de compuertas lógicas)
-## Descripción en lenguaje HDL (Hardware Description Language)
-## Síntesis en FPGA (dominio físico final)
+## 1. Dominio comportamental (especificación y algoritmo)
+## 2. Dominio físico inicial (circuito eléctrico)
+## 3. Simulación en lenguaje ladder
+## 4. Dominio estructural (red de compuertas lógicas)
+## 5. Descripción en lenguaje HDL (Hardware Description Language)
+## 6. Síntesis en FPGA (dominio físico final)
