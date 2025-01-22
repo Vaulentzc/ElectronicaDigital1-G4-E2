@@ -106,4 +106,17 @@ Mapa de Karnaugh para Q8
 
 
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
+
 ## 6. Síntesis en FPGA (dominio físico final)
+Para el desarrollo de esta sección de síntesis, se siguió el tutorial suministrado por el docente Johnny Cubides. Haciendo uso del programa Fritzing se realizó el circuito propuesto con el objetivo de facilitar visualmente la implementación análoga de la solución a la situación problema.
+
+Se configuran los pines digitales de la siguiente manera:  
+leds: P8-P14; Desde el Q1.1 hasta el Q8 en orden a excepción de los relés.
+Switches (inputs): P28,29 y 30 para I1 RE, I4 ES Y I3 PE respectivamente.
+Se señala gnd y el 3.3v.
+
+En base a ello se obtuvo el montaje en la protoboard mostrado a continuación.
+
+## Conclusión.
+
+
