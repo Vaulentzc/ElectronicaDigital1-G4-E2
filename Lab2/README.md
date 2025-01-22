@@ -87,6 +87,7 @@ Q8=0 (ind. casa energizada)
 Para el diseño del sistema con compuertas lógicas se usaron de base los diagramas anteriores. Dicho sistema se representó en la herramienta Digital: logic designer and simulator en el que se llegó a la siguiente solución:  
 
 Con ello se obtuvieron los siguientes mapas de Karnaugh:
+
 Mapa de Karnaugh para Q1a
 
 Mapa de Karnaugh para Q1b
