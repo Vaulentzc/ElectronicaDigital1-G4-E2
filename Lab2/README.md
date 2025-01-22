@@ -1,5 +1,5 @@
 ﻿# Laboratorio 2
-El sistema es una solución para garantizar el suministro de energía eléctrica en una finca, combinando el uso de baterias alimentadas con energía solar y la red eléctrica del comercializador local. Este sistema alterna entre las fuentes de energía según las condiciones de operación o detiene el sistema de energización en caso de emergencia. Adicionalmente se planteó proporcionar indicadores para el estado del sistema.
+El sistema es una solución para garantizar el suministro de energía en una finca, combinando el uso de baterias alimentadas con energía solar y la red eléctrica del comercializador local. Este sistema alterna entre las fuentes de energía según las condiciones de operación o detiene el sistema de energización en caso de emergencia. Adicionalmente se planteó proporcionar indicadores para el estado del sistema.
 
 ## 1. Dominio comportamental (especificación y algoritmo)
 ### 1.1. Diagrama de caja negra
