@@ -189,8 +189,8 @@ Se fijaron prioridades como el hecho de que el sistema priorizó de manera efici
 
 Cabe mencionar que el lenguaje Ladder permitió validar la lógica del sistema antes de su implementación física, simulando el comportamiento de los sensores, relés y demás componentes. Esto ayuda a identificar y corregir errores en etapas tempranas del proceso. Además, la representación de las condiciones mediante tablas de verdad y la construcción de circuitos digitales proporcionaron una base sólida para la implementación física del sistema.
 
-El uso de relés conmutadores y energizadores, junto con indicadores visuales para el estado de la red eléctrica, las baterías y la energía solar, aseguró que el usuario tuviera un control claro y directo sobre el sistema. La integración de un botón de paro de emergencia añadió una capa esencial de seguridad, permitiendo la desconexión inmediata de las fuentes de energía en caso de necesidad.
+El análisis para representar el relé conmutador y el energizador a partir de compuertas lógicas, junto con la relación de indicadores visuales para el estado de la red eléctrica, las baterías y la energía solar, proporciona un control claro y directo sobre el sistema.
 
-En resumen, este proyecto culminó en un sistema funcional y adaptable, capaz de responder adecuadamente a diversas condiciones operativas. La metodología de un análisis lógico, simulado y diseño físico resultó en una solución eficiente y confiable que garantiza la continuidad del suministro de energía, alineándose con los objetivos planteados al inicio del desarrollo.
+En resumen, el laboratorio permitió el desarrollo de un sistema funcional y adaptable, capaz de responder adecuadamente a diversas condiciones operativas. La metodología de pasar de un análisis lógico a simulado y diseño físico resultó en una solución eficiente que garantiza el cumplimiento de las restricciones propuestas como la continuidad del suministro de energía.
 
 
