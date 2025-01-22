@@ -4,7 +4,7 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 ## 1. Dominio comportamental (especificación y algoritmo)
 ### 1.1. Diagrama de caja negra
 
-![Texto alternativo](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20caja%20negra.png?raw=true)
+![Diagrama de caja negra](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20caja%20negra.png?raw=true)
 
 
 #### Inputs:
@@ -22,6 +22,8 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   Q8. Energía casa (1 para cuando la casa está energizada, 0 cuando no está energizada)
 
 ### 1.2. Diagrama de bloques
+
+![Diagrama de bloques](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20de%20flujo.jpg?raw=true)
 
 ### 1.3. Tablas de verdad
 
