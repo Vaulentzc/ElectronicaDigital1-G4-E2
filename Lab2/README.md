@@ -45,11 +45,11 @@ I2=0 Baterías desactivadas
 I3=0 Paro de emergencia desactivado  
 I4=0 Luz solar desactivada  
 ##### Salidas
-Q3=1 (ind. red eléctrica)  
-Q4=0 (ind. baterias)  
-Q5=0 (ind. energía solar)  
-Q6=0 (ind. botón de emergencia)  
-Q7=0 (ind. tipo de red)  
+Q1=1 (ind. tipo de red)  
+Q2=0 (ind. red eléctrica)   
+Q3=0 (ind. baterias)   
+Q4=0 (ind. energía solar)     
+Q5=0 (ind. botón de emergencia)  
 Q8=1 (ind. casa energizada)  
 
 #### Caso 2. Casa energizada con baterias, paro de emergencia desactivado.
@@ -60,12 +60,13 @@ I2=1 Baterías activadas
 I3=0 Paro de emergencia desactivado  
 I4=1 Luz solar activada  
 ##### Salidas
-Q3=0 (ind. red eléctrica)  
-Q4=1 (ind. baterias)  
-Q5=1 (ind. energía solar)  
-Q6=0 (ind. botón de emergencia)  
-Q7=1 (ind. tipo de red)  
+Q1=1 (ind. tipo de red)  
+Q2=0 (ind. red eléctrica)   
+Q3=1 (ind. baterias)   
+Q4=1 (ind. energía solar)     
+Q5=0 (ind. botón de emergencia)  
 Q8=1 (ind. casa energizada)  
+
 
 #### Caso 3. Paro de emergencia activado.
 En caso de que se active el botón de emergencia (I3=1) se suspenderá la energía en la casa sin importar la fuente estuviera activa, es decir, se podrán visualizar tanto los indicadores de la red eléctrica como los de la energía solar y las baterias señalando que están funcionando pero por el segundo relé la casa no recibirá energía.
@@ -75,12 +76,13 @@ I2=1 Baterías activadas
 I3=1 Paro de emergencia desactivado  
 I4=1 Luz solar activada  
 ##### Salidas
-Q3=1 (ind. red eléctrica)  
-Q4=1 (ind. baterias)  
-Q5=1 (ind. energía solar)  
-Q6=1 (ind. botón de emergencia)  
-Q7=1 (ind. tipo de red)  
+Q1=1 (ind. tipo de red)  
+Q2=1 (ind. red eléctrica)   
+Q3=1 (ind. baterias)   
+Q4=1 (ind. energía solar)     
+Q5=1 (ind. botón de emergencia)  
 Q8=0 (ind. casa energizada)  
+
 
 ## 4. Dominio estructural (red de compuertas lógicas)
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
