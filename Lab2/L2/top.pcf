@@ -1,0 +1,11 @@
+# CONFIGURACION DE PINES FPGA
+set_io I1_Red_Electrica 12 # I1 Red Electrica
+set_io I4_Energia_Solar 11 # I4 Energia Solar
+set_io I3_Paro_Emergencia 10 # I3 Paro Emergencia
+set_io Q8_Energia_Casa 38 # Q8 LED I. Energia Casa
+set_io Q5_I_Paro_Emergencia 37 # Q5 LED I. Paro Emergencia
+set_io Q4_I_Energia_Solar 34 # Q4 LED I. Energia Solar
+set_io Q3_I_Bateria 33 # Q3 LED I. Bateria
+set_io Q2_I_Red_ELectrica 32 # Q2 LED I. Red Electrica
+set_io Q1a_Tipo_de_Red_RE 31 # Q1a LED I. Tipo de Red - RE
+set_io Q1b_TIpo_de_Red_B 29 # Q1b LED I. Tipo de Red - B
