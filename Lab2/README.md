@@ -120,6 +120,8 @@ Se señala gnd y el 3.3v.
 
 En base a ello se obtuvo el montaje en la protoboard mostrado a continuación.
 
+Por último se muestra un vídeo de explicación del desarrollo del sistema:
+
 ## Conclusión.
 En conclusión, el diseño e implementación del sistema se desarrollaron de forma estructurada y lógica, asegurando la funcionalidad y adaptabilidad del mismo en cada etapa. Desde el análisis inicial con tablas de verdad hasta la creación de diagramas de flujo y su traducción a lenguaje Ladder, se logró una comprensión integral del problema y su solución. 
 
