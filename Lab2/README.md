@@ -157,12 +157,20 @@ Se observa tambien que la lógica considera la señal de emergencia I3, que desa
 ## 6. Síntesis en FPGA (dominio físico final)
 Para el desarrollo de esta sección de síntesis, se siguió el tutorial suministrado por el docente Johnny Cubides. Haciendo uso del programa Fritzing se realizó el circuito propuesto con el objetivo de facilitar visualmente la implementación análoga de la solución a la situación problema.
 
+![montaje fritzing](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/S%C3%ADntesis%20FPGA/Montaje%20fritzing.png?raw=true)
+
+![montaje](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/S%C3%ADntesis%20FPGA/Montaje%20FPGA.png?raw=true)
+
+![montaje FPGA](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/S%C3%ADntesis%20FPGA/Montaje%20FPGA.jpeg?raw=true)
+
 Se configuran los pines digitales de la siguiente manera:  
 leds: P8-P14; Desde el Q1.1 hasta el Q8 en orden a excepción de los relés.
 Switches (inputs): P28,29 y 30 para I1 RE, I4 ES Y I3 PE respectivamente.
 Se señala gnd y el 3.3v.
 
 En base a ello se obtuvo el montaje en la protoboard mostrado a continuación.
+
+![montaje FPGA](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/S%C3%ADntesis%20FPGA/Montaje%20fisico.jpeg?raw=true)
 
 Por último se muestra un vídeo de explicación del desarrollo del sistema:
 
