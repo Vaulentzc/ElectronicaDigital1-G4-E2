@@ -35,7 +35,7 @@ En esta sección para simplificar el proceso se reprsentó Q1 como fuente donde 
 
 Se establecen las siguientes suposiciones:
 
-La casa siempre va a estar energizada a excepción del caso en el que se active el botón de emergencia, el cual el usuario debe activarlo de forma autónoma.
+La casa siempre va a estar energizada a excepción del caso en el que se active el botón de emergencia, el cual el usuario debe activarlo de forma manual.
 
 Se establece que la red eléctrica será la fuente principal de energía del sistema a través del relé conmutador que se conecta a la casa directamente. Cuando se presente un fallo en la red eléctrica, el relé conmutador cambia automáticamente a las baterías. 
 
