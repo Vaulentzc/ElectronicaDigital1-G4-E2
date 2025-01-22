@@ -109,6 +109,15 @@ En primer lugar se puede observar que las entradas y salidas en el archivo corre
 
 De la misma manera se observa el comportamiento y relaciones de las salidas y entradas mencionadas:
 
+Se puede ver que Q3 IBateria utiliza un flip-flop que se actualiza con el pulso de la entrada de energía solar I4_Energía_Solar indicando que la batería estará activa cuando la energía solar se active. Es decir I4 activa el flip-flop que almacena el estado de la batería
+
+Tambien Q1b se puede ver que se activa si no hay red eléctrica I1 y la batería está disponible Q3 IBateria. Mientras que Q1a es su complemento indicando que si no se está usando una fuente secundaria, entonces se utiliza la red eléctrica.
+
+Se señala que la casa Q8 tiene suministro eléctrico si:
+     - Hay red eléctrica disponible y no se usa una fuente secundaria.
+     - O si se usa la batería como fuente secundaria.
+    
+Se observa tambien que la lógica considera la señal de emergencia I3, que desactiva el suministro si está activa, y que cada entrada se relaciona directamente con su indicador
 
 ## 6. Síntesis en FPGA (dominio físico final)
 Para el desarrollo de esta sección de síntesis, se siguió el tutorial suministrado por el docente Johnny Cubides. Haciendo uso del programa Fritzing se realizó el circuito propuesto con el objetivo de facilitar visualmente la implementación análoga de la solución a la situación problema.
