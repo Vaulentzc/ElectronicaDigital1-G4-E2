@@ -55,10 +55,10 @@ Q8=1 (ind. casa energizada)
 #### Caso 2. Casa energizada con baterias, paro de emergencia desactivado.
 En el escenario donde la energía solar sea suficiente (I4=1), por lo que las baterias se mantendran cargadas (I2=1) y el boton de emergencia se mantenga desactivado (I3=0) la casa estará energizada por esta fuente y los indicadores asociados a la energía solar y las baterias estarán activos.
 ##### Entradas
-I1=0 Red eléctrica activada
-I2=1 Baterías activadas
-I3=0 Paro de emergencia desactivado
-I4=1 Luz solar activada
+I1=0 Red eléctrica activada  
+I2=1 Baterías activadas  
+I3=0 Paro de emergencia desactivado  
+I4=1 Luz solar activada  
 ##### Salidas
 Q3=0 (ind. red eléctrica)  
 Q4=1 (ind. baterias)  
@@ -70,10 +70,10 @@ Q8=1 (ind. casa energizada)
 #### Caso 3. Paro de emergencia activado.
 En caso de que se active el botón de emergencia (I3=1) se suspenderá la energía en la casa sin importar la fuente estuviera activa, es decir, se podrán visualizar tanto los indicadores de la red eléctrica como los de la energía solar y las baterias señalando que están funcionando pero por el segundo relé la casa no recibirá energía.
 ##### Entradas
-I1=1 Red eléctrica activada
-I2=1 Baterías activadas
-I3=1 Paro de emergencia desactivado
-I4=1 Luz solar activada
+I1=1 Red eléctrica activada  
+I2=1 Baterías activadas  
+I3=1 Paro de emergencia desactivado  
+I4=1 Luz solar activada  
 ##### Salidas
 Q3=1 (ind. red eléctrica)  
 Q4=1 (ind. baterias)  
