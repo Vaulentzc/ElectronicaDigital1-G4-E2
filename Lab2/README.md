@@ -104,6 +104,10 @@ Para el diseño del sistema con compuertas lógicas se usaron de base los diagra
 
 ![Diseño en Digital](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Dise%C3%B1o%20en%20%20digital.png?raw=true)
 
+A partir de este sistema se obtiene la siguiente tabla de verdad:
+
+![tabla de verdad - Digital](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Tabla%20de%20verdad-%20Digital.png?raw=true)
+
 Con ello se obtuvieron los siguientes mapas de Karnaugh:
 
 Mapa de Karnaugh para Q1a
@@ -142,7 +146,11 @@ Mapa de Karnaugh para Q8
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
 En primer lugar se puede observar que las entradas y salidas en el archivo corresponden con las del diagrama de caja negra.
 
+![input-output HDL](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Descripci%C3%B3n%20en%20lenguaje%20HDL/Inputs-outputs.png?raw=true)
+
 De la misma manera se observa el comportamiento y relaciones de las salidas y entradas mencionadas:
+
+![sistema en HDL](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Descripci%C3%B3n%20en%20lenguaje%20HDL/Sistema%20en%20HDL.png?raw=true)
 
 Se puede ver que Q3 IBateria utiliza un flip-flop que se actualiza con el pulso de la entrada de energía solar I4_Energía_Solar indicando que la batería estará activa cuando la energía solar se active. Es decir I4 activa el flip-flop que almacena el estado de la batería
 
