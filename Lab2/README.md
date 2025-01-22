@@ -11,7 +11,7 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   I1. red eléctrica.  
   I2. Baterias cargadas.  
   I3. Botón de paro de emergencia.  
-  I4. Baterias cargadas.
+  I4. Energía solar.
 
 #### Outputs:
   Q1. Indicador del tipo de red que está energizando la casa (Hay un indicador para la red electrica y otro para la bateria).  
