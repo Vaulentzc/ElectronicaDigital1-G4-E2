@@ -105,6 +105,10 @@ Mapa de Karnaugh para Q8
 
 
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
+En primer lugar se puede observar que las entradas y salidas en el archivo corresponden con las del diagrama de caja negra.
+
+De la misma manera se observa el comportamiento y relaciones de las salidas y entradas mencionadas:
+
 
 ## 6. Síntesis en FPGA (dominio físico final)
 Para el desarrollo de esta sección de síntesis, se siguió el tutorial suministrado por el docente Johnny Cubides. Haciendo uso del programa Fritzing se realizó el circuito propuesto con el objetivo de facilitar visualmente la implementación análoga de la solución a la situación problema.
@@ -117,5 +121,14 @@ Se señala gnd y el 3.3v.
 En base a ello se obtuvo el montaje en la protoboard mostrado a continuación.
 
 ## Conclusión.
+En conclusión, el diseño e implementación del sistema se desarrollaron de forma estructurada y lógica, asegurando la funcionalidad y adaptabilidad del mismo en cada etapa. Desde el análisis inicial con tablas de verdad hasta la creación de diagramas de flujo y su traducción a lenguaje Ladder, se logró una comprensión integral del problema y su solución. 
+
+Se fijaron prioridades como el hecho de que el sistema priorizó de manera eficiente el uso de la red eléctrica como fuente primaria de energía, conmutando a las baterías solo cuando era necesario, y garantizando así un suministro constante de energía para la casa en diferentes escenarios operativos.
+
+Cabe mencionar que el lenguaje Ladder permitió validar la lógica del sistema antes de su implementación física, simulando el comportamiento de los sensores, relés y demás componentes. Esto ayuda a identificar y corregir errores en etapas tempranas del proceso. Además, la representación de las condiciones mediante tablas de verdad y la construcción de circuitos digitales proporcionaron una base sólida para la implementación física del sistema.
+
+El uso de relés conmutadores y energizadores, junto con indicadores visuales para el estado de la red eléctrica, las baterías y la energía solar, aseguró que el usuario tuviera un control claro y directo sobre el sistema. La integración de un botón de paro de emergencia añadió una capa esencial de seguridad, permitiendo la desconexión inmediata de las fuentes de energía en caso de necesidad.
+
+En resumen, este proyecto culminó en un sistema funcional y adaptable, capaz de responder adecuadamente a diversas condiciones operativas. La metodología de un análisis lógico, simulado y diseño físico resultó en una solución eficiente y confiable que garantiza la continuidad del suministro de energía, alineándose con los objetivos planteados al inicio del desarrollo.
 
 
