@@ -3,6 +3,9 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 
 ## 1. Dominio comportamental (especificación y algoritmo)
 ### 1.1. Diagrama de caja negra
+
+![Diagrama de caja negra](Lab2/Anexos/Diagrama caja negra.png)
+
 #### Inputs:
   I1. red eléctrica.  
   I2. Baterias cargadas.  
@@ -15,8 +18,6 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   Q3. Indicador de que las baterias están cargadas (1 para están cargadas, 0 para no están cargadas).  
   Q4. Indicador de que hay suficiente energía solar (1 para hay suficiente, 0 para no hay sufciente).  
   Q5. Indicador del paro de emergencia (1 para cuando está activado, 0 cuando no está activado).  
-  Q6. Rele conmutador de las fuentes.  
-  Q7. Rele energizador de la casa.  
   Q8. Energía casa (1 para cuando la casa está energizada, 0 cuando no está energizada)
 
 ### 1.2. Diagrama de bloques
