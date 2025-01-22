@@ -36,6 +36,9 @@ Se establece que la red eléctrica será la fuente principal de energía del sis
 La energía solar no se usa directamente para alimentar la casa, sino que mantiene cargadas las baterías para garantizar un suministro continuo durante los cortes eléctricos, por lo que las baterias estarán directamente relacionadas con el estado de la disponibilidad de energía solar.
 
 ## 3. Simulación en lenguaje ladder
+#### caso 1. Casa energizada con red eléctrica, paro de emergencia desactivado.
+#### caso 2. Casa energizada con baterias, paro de emergencia desactivado.
+#### caso 3. Paro de emergencia activado.
 ## 4. Dominio estructural (red de compuertas lógicas)
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
 ## 6. Síntesis en FPGA (dominio físico final)
