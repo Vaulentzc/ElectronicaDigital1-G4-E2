@@ -17,13 +17,15 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   Q5. Indicador del paro de emergencia (1 para cuando está activado, 0 cuando no está activado).  
   Q6. Rele conmutador de las fuentes.  
   Q7. Rele energizador de la casa.  
-  Q8. Energía casa
+  Q8. Energía casa (1 para cuando la casa está energizada, 0 cuando no está energizada)
 
 ### 1.2. Diagrama de flujo
 
 ### 1.3. Tablas de verdad
 
 La casa siempre va a estar energizada a excepción del caso en el que se active el botón de emergencia. Se establece que la red eléctrica será la fuente principal de energía del sistema donde a través del relé conmutador se alimenta la casa directamente. Cuando haya un fallo en la red eléctrica, el relé conmutador cambia automáticamente a las baterías. La energía solar no se usa directamente para alimentar la casa, sino que mantiene cargadas las baterías para garantizar un suministro continuo durante los cortes eléctricos.
+
+En esta sección para simplificar el proceso se reprsentó Q1 como fuente donde 0 es cuando está seleccionada la red eléctrica y 1 cuando las baterías están seleccionadas, y en el caso de energía casa, 1 es cuando la casa está energizada y 0 para cuando no lo está.
 
 ## 2. Dominio físico inicial (circuito eléctrico)
 ## 3. Simulación en lenguaje ladder
