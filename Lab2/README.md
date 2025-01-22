@@ -16,7 +16,7 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   Q4. Indicador de que hay suficiente energía solar (1 para hay suficiente, 0 para no hay sufciente).  
   Q5. Indicador del paro de emergencia (1 para cuando está activado, 0 cuando no está activado).  
   Q6. Rele conmutador de las fuentes.  
-  Q7. Rele energizador de la casa.
+  Q7. Rele energizador de la casa.  
   Q8. Energía casa
 
 ### 1.2. Diagrama de flujo
