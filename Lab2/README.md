@@ -29,7 +29,7 @@ En esta sección para simplificar el proceso se reprsentó Q1 como fuente donde 
 
 Se establecen las siguientes suposiciones:
 
-La casa siempre va a estar energizada a excepción del caso en el que se active el botón de emergencia. 
+La casa siempre va a estar energizada a excepción del caso en el que se active el botón de emergencia, el cual el usuario debe activarlo de forma autónoma.
 
 Se establece que la red eléctrica será la fuente principal de energía del sistema a través del relé conmutador que se conecta a la casa directamente. Cuando se presente un fallo en la red eléctrica, el relé conmutador cambia automáticamente a las baterías. 
 
@@ -83,7 +83,26 @@ Q4=1 (ind. energía solar)
 Q5=1 (ind. botón de emergencia)  
 Q8=0 (ind. casa energizada)  
 
-
 ## 4. Dominio estructural (red de compuertas lógicas)
+Para el diseño del sistema con compuertas lógicas se usaron de base los diagramas anteriores. Dicho sistema se representó en la herramienta Digital: logic designer and simulator en el que se llegó a la siguiente solución:  
+
+Con ello se obtuvieron los siguientes mapas de Karnaugh:
+Mapa de Karnaugh para Q1a
+
+Mapa de Karnaugh para Q1b
+
+Mapa de Karnaugh para Q2
+
+Mapa de Karnaugh para Q3n+1
+
+Mapa de Karnaugh para Q3
+
+Mapa de Karnaugh para Q4
+
+Mapa de Karnaugh para Q5
+
+Mapa de Karnaugh para Q8
+
+
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
 ## 6. Síntesis en FPGA (dominio físico final)
