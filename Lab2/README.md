@@ -193,6 +193,6 @@ Cabe mencionar que el lenguaje Ladder permitió validar la lógica del sistema a
 
 El análisis para representar el relé conmutador y el energizador a partir de compuertas lógicas, junto con la relación de indicadores visuales para el estado de la red eléctrica, las baterías y la energía solar, proporciona un control claro y directo sobre el sistema.
 
-En resumen, el laboratorio permitió el desarrollo de un sistema funcional y adaptable, capaz de responder adecuadamente a diversas condiciones operativas. La metodología de pasar de un análisis lógico a simulado y diseño físico resultó en una solución eficiente que garantiza el cumplimiento de las restricciones propuestas como la continuidad del suministro de energía.
+Se puede decir que el laboratorio permitió el desarrollo de un sistema funcional y adaptable, capaz de responder adecuadamente a diversas condiciones operativas. La metodología de pasar de un análisis lógico a simulado y diseño físico resultó en una solución eficiente que garantiza el cumplimiento de las restricciones propuestas como la continuidad del suministro de energía.
 
 
