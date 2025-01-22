@@ -19,7 +19,7 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
   Q7. Rele energizador de la casa.  
   Q8. Energía casa (1 para cuando la casa está energizada, 0 cuando no está energizada)
 
-### 1.2. Diagrama de flujo
+### 1.2. Diagrama de bloques
 
 ### 1.3. Tablas de verdad
 
