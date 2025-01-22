@@ -4,7 +4,7 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 ## 1. Dominio comportamental (especificación y algoritmo)
 ### 1.1. Diagrama de caja negra
 
-![Texto alternativo]([https://raw.githubusercontent.com/usuario/repositorio/rama/images/diagrama.png](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20caja%20negra.png?raw=true))
+![Texto alternativo]((https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20caja%20negra.png?raw=true))
 
 
 #### Inputs:
