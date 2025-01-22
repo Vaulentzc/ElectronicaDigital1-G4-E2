@@ -36,9 +36,52 @@ Se establece que la red eléctrica será la fuente principal de energía del sis
 La energía solar no se usa directamente para alimentar la casa, sino que mantiene cargadas las baterías para garantizar un suministro continuo durante los cortes eléctricos, por lo que las baterias estarán directamente relacionadas con el estado de la disponibilidad de energía solar.
 
 ## 3. Simulación en lenguaje ladder
-#### caso 1. Casa energizada con red eléctrica, paro de emergencia desactivado.
-#### caso 2. Casa energizada con baterias, paro de emergencia desactivado.
-#### caso 3. Paro de emergencia activado.
+
+#### Caso 1. Casa energizada con red eléctrica.
+En el escenario donde la red eléctrica esté activada (I1=1) y el boton de emergencia este apagado (I3=0) la casa estará energizada por esta fuente y los indicadores asociados a la red eléctrica estarán activos.  
+##### Entradas
+I1=1 Red eléctrica activada
+I2=0 Baterías desactivadas
+I3=0 Paro de emergencia desactivado
+I4=0 Luz solar desactivada
+##### Salidas
+Q3=1 (ind. red eléctrica)
+Q4=0 (ind. baterias)
+Q5=0 (ind. energía solar)
+Q6=0 (ind. botón de emergencia)
+Q7=0 (ind. tipo de red)
+Q8=1 (ind. casa energizada)
+
+#### Caso 2. Casa energizada con baterias, paro de emergencia desactivado.
+En el escenario donde la energía solar sea suficiente (I4=1), por lo que las baterias se mantendran cargadas (I2=1) y el boton de emergencia se mantenga desactivado (I3=0) la casa estará energizada por esta fuente y los indicadores asociados a la energía solar y las baterias estarán activos.
+##### Entradas
+I1=0 Red eléctrica activada
+I2=1 Baterías activadas
+I3=0 Paro de emergencia desactivado
+I4=1 Luz solar activada
+##### Salidas
+Q3=0
+Q4=1
+Q5=1
+Q6=0
+Q7=1
+Q8=1
+
+#### Caso 3. Paro de emergencia activado.
+En caso de que se active el botón de emergencia (I3=1) se suspenderá la energía en la casa sin importar la fuente estuviera activa, es decir, se podrán visualizar tanto los indicadores de la red eléctrica como los de la energía solar y las baterias señalando que están funcionando pero por el segundo relé la casa no recibirá energía.
+##### Entradas
+I1=1 Red eléctrica activada
+I2=1 Baterías activadas
+I3=1 Paro de emergencia desactivado
+I4=1 Luz solar activada
+##### Salidas
+Q3=1
+Q4=1
+Q5=1
+Q6=1
+Q7=1
+Q8=0
+
 ## 4. Dominio estructural (red de compuertas lógicas)
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
 ## 6. Síntesis en FPGA (dominio físico final)
