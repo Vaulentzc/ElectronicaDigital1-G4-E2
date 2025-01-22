@@ -25,7 +25,9 @@ El sistema es una solución para garantizar el suministro de energía eléctrica
 
 ![Diagrama de bloques](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Diagrama%20de%20flujo.jpg?raw=true)
 
-### 1.3. Tablas de verdad
+### 1.3. Tabla de verdad
+
+![Tablas de verdad](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Tabla%20de%20verdad.png?raw=true)
 
 En esta sección para simplificar el proceso se reprsentó Q1 como fuente donde 0 es cuando está seleccionada la red eléctrica y 1 cuando las baterías están seleccionadas, y en el caso de energía casa, 1 es cuando la casa está energizada y 0 para cuando no lo está.
 
@@ -42,7 +44,11 @@ La energía solar no se usa directamente para alimentar la casa, sino que mantie
 ## 3. Simulación en lenguaje ladder
 
 #### Caso 1. Casa energizada con red eléctrica.
+
 En el escenario donde la red eléctrica esté activada (I1=1) y el boton de emergencia este apagado (I3=0) la casa estará energizada por esta fuente y los indicadores asociados a la red eléctrica estarán activos.  
+
+![Caso 1](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Casos%20simulacion%20ladder/Caso%201-red%20electrica.png?raw=true)
+
 ##### Entradas
 I1=1 Red eléctrica activada  
 I2=0 Baterías desactivadas  
@@ -58,6 +64,9 @@ Q8=1 (ind. casa energizada)
 
 #### Caso 2. Casa energizada con baterias, paro de emergencia desactivado.
 En el escenario donde la energía solar sea suficiente (I4=1), por lo que las baterias se mantendran cargadas (I2=1) y el boton de emergencia se mantenga desactivado (I3=0) la casa estará energizada por esta fuente y los indicadores asociados a la energía solar y las baterias estarán activos.
+
+![Caso 2](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Casos%20simulacion%20ladder/Caso%202%20-%20Baterias.png?raw=true)
+
 ##### Entradas
 I1=0 Red eléctrica activada  
 I2=1 Baterías activadas  
@@ -74,6 +83,9 @@ Q8=1 (ind. casa energizada)
 
 #### Caso 3. Paro de emergencia activado.
 En caso de que se active el botón de emergencia (I3=1) se suspenderá la energía en la casa sin importar la fuente estuviera activa, es decir, se podrán visualizar tanto los indicadores de la red eléctrica como los de la energía solar y las baterias señalando que están funcionando pero por el segundo relé la casa no recibirá energía.
+
+![Caso 3](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Casos%20simulacion%20ladder/Caso%203%20-%20paro%20de%20emergencia.png?raw=true)
+
 ##### Entradas
 I1=1 Red eléctrica activada  
 I2=1 Baterías activadas  
@@ -88,25 +100,43 @@ Q5=1 (ind. botón de emergencia)
 Q8=0 (ind. casa energizada)  
 
 ## 4. Dominio estructural (red de compuertas lógicas)
-Para el diseño del sistema con compuertas lógicas se usaron de base los diagramas anteriores. Dicho sistema se representó en la herramienta Digital: logic designer and simulator en el que se llegó a la siguiente solución:  
+Para el diseño del sistema con compuertas lógicas se usaron de base los diagramas anteriores. Dicho sistema se representó en la herramienta Digital: logic designer and simulator en el que se llegó a la siguiente solución: 
+
+![Diseño en Digital](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Dise%C3%B1o%20en%20%20digital.png?raw=true)
 
 Con ello se obtuvieron los siguientes mapas de Karnaugh:
 
 Mapa de Karnaugh para Q1a
 
+![Mapa de Karnaugh para Q1a](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q1a%20-%20Tipo%20de%20red%20RE.png?raw=true)
+
 Mapa de Karnaugh para Q1b
+
+![Mapa de Karnaugh para Q1b](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q1b%20-%20Tipo%20de%20red%20baterias.png?raw=true)
 
 Mapa de Karnaugh para Q2
 
+![Mapa de Karnaugh para Q2](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q2-I%20red%20electrica.png?raw=true)
+
 Mapa de Karnaugh para Q3n+1
+
+![Mapa de Karnaugh para Q3n+1](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20para%20Q3%20bateria%20n+1.png?raw=true)
 
 Mapa de Karnaugh para Q3
 
+![Mapa de Karnaugh para Q3](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q3-Ibateria.png?raw=true)
+
 Mapa de Karnaugh para Q4
+
+![Mapa de Karnaugh para Q4](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/MapaQ4%20-%20Energia%20solar.png?raw=true)
 
 Mapa de Karnaugh para Q5
 
+![Mapa de Karnaugh para Q5](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q5%20-%20Paro%20emergencia.png?raw=true)
+
 Mapa de Karnaugh para Q8
+
+![Mapa de Karnaugh para Q8](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/Mapas%20de%20Karnaugh/Mapa%20Q8%20-%20energia%20casa.png?raw=true)
 
 
 ## 5. Descripción en lenguaje HDL (Hardware Description Language)
