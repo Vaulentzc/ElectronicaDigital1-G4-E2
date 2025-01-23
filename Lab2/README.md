@@ -183,6 +183,7 @@ En base a ello se obtuvo el montaje en la protoboard mostrado a continuación.
 ![montaje FPGA](https://github.com/Vaulentzc/ElectronicaDigital1-G4-E2/blob/main/Lab2/Anexos/S%C3%ADntesis%20FPGA/Montaje%20fisico.jpeg?raw=true)
 
 Por último se muestra un vídeo de explicación del desarrollo del sistema:
+[vídeo proceso de diseño](https://youtu.be/faRLParOO90)
 
 ## Conclusión.
 En conclusión, el diseño e implementación del sistema se desarrollaron de forma estructurada y lógica, asegurando la funcionalidad y adaptabilidad del mismo en cada etapa. Desde el análisis inicial con tablas de verdad hasta la creación de diagramas de flujo y su traducción a lenguaje Ladder, se logró una comprensión integral del problema y su solución. 
