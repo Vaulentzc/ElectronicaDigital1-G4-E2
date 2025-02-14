@@ -19,43 +19,6 @@ SynthIce es un sintetizador digital desarrollado sobre la FPGA BlackIce40, utili
 - Parlantes de 8W.
 - Alimentación de 5V vía USB Micro.
 
-## Instalación y Uso
-### 1. Clonar el repositorio
-```bash
- git clone https://github.com/tuusuario/SynthIce.git
- cd SynthIce
-```
-### 2. Compilar y cargar en la FPGA
-Utiliza un entorno compatible con BlackIce40 y Verilog.
-```bash
- make all
-```
-### 3. Conectar los componentes
-Sigue el esquema de conexión detallado en la documentación.
-
-### 4. Ejecutar
-Enciende la FPGA y utiliza los pulsadores y encoders para generar y modular sonido.
-
-## Estructura del Proyecto
-```
-SynthIce/
-├── src/                 # Código en Verilog
-│   ├── sintetizador.v   # Módulo de síntesis de sonido
-│   ├── reproductor.v    # Módulo de reproducción de pistas
-│   ├── top.v           # Archivo principal de integración
-├── docs/                # Documentación del proyecto
-│   ├── informe.pdf      # Informe detallado
-│   ├── esquemas/       # Diagramas de hardware
-├── pcb/                 # Diseño de PCB
-├── README.md            # Este archivo
-├── LICENSE              # Licencia del proyecto
-```
-
-## Autores
-- **Samuel David Sánchez Cárdenas** - [samsanchezca@unal.edu.co](mailto:samsanchezca@unal.edu.co)
-- **Paula Valentina Álvarez Chaparro** - [palvarezch@unal.edu.co](mailto:palvarezch@unal.edu.co)
-- **Dayanna Segovia Arteaga** - [daarteagas@unal.edu.co](mailto:daarteagas@unal.edu.co)
-
 ## Futuras Mejoras
 - Integración con MIDI para control externo.
 - Implementación de más formas de onda (sinusoidal, triangular, etc.).
@@ -63,4 +26,10 @@ SynthIce/
 - Expansión de memoria para almacenar múltiples pistas.
 
 # Informe
-El informe que contiene el registro del desarrollo de SynthIce está adjunto en el repositorio donde se encuentra la descripción detallada de cada módulo tanto en eñ planteamiento como en el diseño a través de la metodología top down.
+El informe que contiene el registro del desarrollo de SynthIce está adjunto en el repositorio donde se encuentra la descripción detallada de cada módulo tanto en eñ planteamiento como en el diseño a través de la metodología Top-down.
+
+
+## Autores
+- **Samuel David Sánchez Cárdenas** - [samsanchezca@unal.edu.co](mailto:samsanchezca@unal.edu.co)
+- **Dayanna Segovia Arteaga** - [daarteagas@unal.edu.co](mailto:daarteagas@unal.edu.co)
+- **Paula Valentina Álvarez Chaparro** - [palvarezch@unal.edu.co](mailto:palvarezch@unal.edu.co)
