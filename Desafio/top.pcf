@@ -1,0 +1,42 @@
+#Entradas
+set_io clk 60 # Señal de reloj del hardware 25 MHz
+set_io Do 104 #Nota Do
+set_io DoS 106 #Nota DoS
+set_io Re 102 #Nota Re
+set_io ReS 105 #Nota ReS
+set_io Mi 49 #Nota Mi
+set_io Fa 101 #Nota Fa
+set_io FaS 52 #Nota FaS
+set_io Sol 99 #Nota 99
+set_io SolS 21 #Nota SolS
+set_io La 19 #Nota La
+set_io LaS 22 #Nota La
+set_io Si 20 #Nota Si
+set_io boton 24 -pulldown #boton on off pista
+
+#encoder frecuencia
+set_io canalA 25
+set_io canalB 23
+set_io sw 26 -pulldown
+
+#encoder velocidad
+set_io PcanalA 33
+set_io PcanalB 37
+set_io Psw 34 -pulldown
+
+
+#Salidas
+set_io ondaDo 9 #Nota Do
+set_io ondaDoS 11 #Nota DoS
+set_io ondaRe 10 #Nota Re
+set_io ondaReS 12 #Nota ReS
+set_io ondaMi 15 #Nota Mi
+set_io ondaFa 17 #Nota Fa
+set_io ondaFaS 16 #Nota FaS
+set_io ondaSol 18 #Nota 99
+set_io ondaSolS 28 #Nota SolS
+set_io ondaLa 31 #Nota La
+set_io ondaLaS 29 #Nota La
+set_io ondaSi 32 #Nota Si
+set_io pista 38 #Pista generada
+
