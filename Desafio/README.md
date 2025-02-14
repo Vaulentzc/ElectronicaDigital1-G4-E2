@@ -1,3 +1,4 @@
+
 # SynthIce: Sintetizador digital basado en FPGA
 
 ## Descripción
@@ -12,7 +13,7 @@ SynthIce es un sintetizador digital desarrollado sobre la FPGA BlackIce40, utili
 
 ## Requerimientos de Hardware
 - FPGA BlackIce40.
-- 7 pulsadores para la entrada de notas.
+- 5 pulsadores para la entrada de notas.
 - Encoder rotativo para modulación.
 - Encoder rotativo para ajuste de BPM.
 - Amplificador PAM8403.
