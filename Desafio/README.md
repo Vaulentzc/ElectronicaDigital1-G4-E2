@@ -28,6 +28,7 @@ SynthIce es un sintetizador digital desarrollado sobre la FPGA BlackIce40, utili
 
 # Informe
 El informe que contiene el registro del desarrollo de SynthIce está adjunto en el repositorio donde se encuentra la descripción detallada de cada módulo tanto en eñ planteamiento como en el diseño a través de la metodología Top-down.
+[Informe SynthIce](https://github.com/usuario/repositorio/blob/rama/ruta/al/archivo.ext)
 
 
 ## Autores
