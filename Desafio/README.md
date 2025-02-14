@@ -1,4 +1,4 @@
-# SynthIce: Sintetizador basado en FPGA
+# SynthIce: Sintetizador digital basado en FPGA
 
 ## Descripción
 SynthIce es un sintetizador digital desarrollado sobre la FPGA BlackIce40, utilizando Verilog. Permite la síntesis y modulación de sonido en tiempo real, ofreciendo una herramienta educativa y accesible para la exploración de conceptos de síntesis digital de audio.
